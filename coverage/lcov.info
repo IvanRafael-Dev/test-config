@@ -1,9 +1,9 @@
 TN:
-SF:file01.ts
-FN:1,sayHello
+SF:file02.ts
+FN:1,sayGoodbye
 FNF:1
 FNH:1
-FNDA:2,sayHello
+FNDA:2,sayGoodbye
 DA:1,2
 DA:2,2
 DA:3,2
