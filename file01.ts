@@ -1,5 +1,5 @@
-export function sayHello(name: string): string {
+export function sayHello (name: string): string {
   return `Hello ${name}!`
 }
 
-console.log(sayHello('Turma 21'));
+console.log(sayHello('Turma 21'))
