@@ -2,12 +2,11 @@ import { Request, Response } from 'express'
 
 export default class UserController {
   async add (req: Request, res: Response): Promise<Response | any> {
-    if (!req.body.email) {
-      return res.status(400).json({ error: 'email is required' })
-    }
-
-    if (!req.body.password) {
-      return res.status(400).json({ error: 'password is required' })
+    const requiredFields = ['email', 'password']
+    for (const field of requiredFields) {
+      if (!req.body[field]) {
+        return res.status(400).json({ error: `${field} is required` })
+      }
     }
   }
 }
