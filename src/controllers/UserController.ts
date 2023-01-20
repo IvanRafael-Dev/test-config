@@ -5,5 +5,9 @@ export default class UserController {
     if (!req.body.email) {
       return res.status(400).json({ error: 'email is required' })
     }
+
+    if (!req.body.password) {
+      return res.status(400).json({ error: 'password is required' })
+    }
   }
 }
